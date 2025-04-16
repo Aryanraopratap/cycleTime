@@ -1,0 +1,44 @@
+<a class="dropdown-item" href="/info/sector58">Palnt-58</a>
+<li><a class="dropdown-item" href="/info/sector60">Palnt-60</a></li>
+<li><a class="dropdown-item" href="/info/sector63">Palnt-63</a></li>
+<li><a class="dropdown-item" href="/info/sector68">Plant-68</a></li>
+
+
+
+
+
+
+<option value="project1">Project 1 - Portfolio Template</option>
+                    <option value="project2">Project 2 - E-Commerce Platform</option>
+                    <option value="project3">Project 3 - Task Manager App</option>
+                    <option value="project4">Project 4 - Blog CMS</option>
+
+
+
+
+
+
+                    <select id="project-select" name="project">
+                        <option value="" disabled selected>Select a project</option>
+                        <% info.forEach((item)=>{ %>
+                            <% if(item.project == "Xiaomi"){ %>
+                                <option value="<%= item.project %>"><%= item.project %></option>
+                            <% } %>
+                            <% if(item.project == "Compal"){ %>
+                                <option value="<%= item.project %>"><%= item.project %></option>
+                            <% } %>
+                            <% if(item.project == "Lenovo"){ %>
+                                <option value="<%= item.project %>"><%= item.project %></option>
+                            <% } %>
+                            <% if(item.project == "Moto-SMT"){ %>
+                                <option value="<%= item.project %>"><%= item.project %></option>
+                            <% } %>
+                            <% if(item.project == "Jio"){ %>
+                                <option value="<%= item.project %>"><%= item.project %></option>
+                            <% } %>
+                            <% if(item.project == "Acer"){ %>
+                                <option value="<%= item.project %>"><%= item.project %></option>
+                            <% } %>
+                        <% }) %>
+                        <a href="/info/alldata"><option>All-Data</option></a>
+                    </select>                    
